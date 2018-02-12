@@ -1,0 +1,24 @@
+{
+  "name": "constructor-hangman",
+  "version": "1.0.0",
+  "description": "A Node.js-based hangman-style game using Javascript constructors.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/JonathonMoore1/Constructor-Hangman.git"
+  },
+  "author": "Jonathon Moore",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/JonathonMoore1/Constructor-Hangman/issues"
+  },
+  "homepage": "https://github.com/JonathonMoore1/Constructor-Hangman#readme",
+  "dependencies": {
+    "inquirer": "^5.1.0",
+    "prompt": "^1.0.0",
+    "require": "^2.4.20"
+  }
+}
