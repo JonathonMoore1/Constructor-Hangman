@@ -1,18 +1,23 @@
 var Letter = function (letter) {
-    this.letter = letter + "";
+    this.char = letter;
     this.guessed = false;
-    this.showLetter = function() {
-        if (this.guessed != true) {
-            return console.log("_");
-        }
-        else {
-            return console.log(this.letter);
+    this.checkLet = function () {
+        if (this.guessed) {
+            console.log("It matches!");
+            return console.log(this.char);
+        } 
+        if (!this.guessed) {
+            console.log("No match :(");
+            return console.log("_");       
         }
     }
-    this.checkArg = function (userGuess) {
-        if (userGuess === this.letter) {
+    this.takeArg1 = function (letter, arg) {
+        if (letter !== arg) {
+            this.guessed = false;
+            console.log("Changed to FALSE");
+        } else {
             this.guessed = true;
-            console.log(this.guessed);
+            console.log("Changed to TRUE");
         }
     }
 }
