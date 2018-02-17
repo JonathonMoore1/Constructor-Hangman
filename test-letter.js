@@ -26,10 +26,12 @@ var Letter = function (letter) {
     }
 }
 
+module.exports = Letter;
+
 // Letter.prototype.check
-var abc = new Letter (letter);
-abc.takeArg(letter, arg);
-abc.checkLet();
+// var abc = new Letter (letter);
+// abc.takeArg(letter, arg);
+// abc.checkLet();
 
 // abc.takeArg();
 
