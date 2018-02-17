@@ -5,5 +5,6 @@ var inquirer = require("inquirer");
 var wordList = ["Bach", "Rameau", "Carpentier", "Vivaldi", "Handel", "Bieber", "Pergolesi", "Buxtehude", "Pachebel"];
 
 function displayWord() {
-    
+    wordList.forEach(split(","));
+    var letters = 
 }
