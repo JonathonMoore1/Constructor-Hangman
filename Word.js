@@ -44,4 +44,4 @@ var Word = function (newLetter) {
 
 module.exports = Word;
 
-// :):):)
+// :):):):)
