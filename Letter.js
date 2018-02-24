@@ -11,7 +11,7 @@ var Letter = function (letter) {
             return console.log("_");       
         }
     }
-    this.takeArg1 = function (letter, arg) {
+    this.takeArg = function (letter, arg) {
         if (letter !== arg) {
             this.guessed = false;
             console.log("Changed to FALSE");
