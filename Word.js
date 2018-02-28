@@ -10,19 +10,13 @@ var Letter = require("./letter.js");
 
 
 
-var userInput = process.argv[2];
-var arg = process.argv[3];
 
-var newLet = new Letter (userInput);
-newLet.takeArg(userInput, arg);
-newLet.checkLet();
+function Word (ranWord) {
+    this.word = ranWord;
+    this.letters = this.word.split('').map(function(char) {
+        return new Letter(char);
+    });
 
-var Word = function (newLetter) {
-    this.userInput = userInput;
-    this.letters = [];
-    this.guessed = false;
-
-    this
 
     // this.getLetter = function() {
     //     for (var i = 0; i < userInput.length; i++) {
@@ -38,9 +32,28 @@ var Word = function (newLetter) {
     // }
 }
 
-// var wurd = new Word(userInput);
-// wurd.getLetter();
-// wurd.takeArg2(arg);
+Word.prototype.showWord = function() {
+// Loop through letters array and call showLet function
+    return this.letters.join(' ');
+}
+
+Word.prototype.guessedCorrectly = function(userInput) {
+    // Loop through letters array and call guessLet function
+    // Checks to see if all letters have been guessed.
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 module.exports = Word;
 
