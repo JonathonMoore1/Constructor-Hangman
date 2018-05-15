@@ -1,10 +1,5 @@
-var word = require("./Word.js");
-var inquirer = require("inquirer");
+const Game = require('./lib/Game');
 
+const game = new Game();
 
-var wordList = ["Bach", "Rameau", "Carpentier", "Vivaldi", "Handel", "Bieber", "Pergolesi", "Buxtehude", "Pachebel"];
-
-function displayWord() {
-    wordList.forEach(split(","));
-    var letters = 
-}
+game.play();
